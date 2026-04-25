@@ -63,10 +63,11 @@ h2 {
 .flex-container {
   display: flex;             
   justify-content: center;  
-  align-items: flex-start;   
-  gap: 20px;                 
+  align-items: center;  
+  gap: 40px;            
   flex-wrap: wrap;           
-  margin-top: 0px;       
+  margin: 40px auto;   
+  max-width: 1200px;    
 }
 
 .flex2 {
@@ -100,9 +101,10 @@ h2 {
 /* Container and Child Layout */
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+  margin: 0 auto;     
+  justify-items: center; 
 }
 
 .child {
